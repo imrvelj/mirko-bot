@@ -1,0 +1,32 @@
+{
+  "name": "mirko",
+  "version": "1.0.0",
+  "description": "Discord music bot",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon",
+    "start": "node dist/index.js"
+  },
+  "author": "Ivan Mrvelj <imrvelj@protonmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.0.0",
+    "dotenv": "^8.0.0",
+    "koa": "^2.13.0",
+    "lodash": "^4.17.11",
+    "opusscript": "0.0.6",
+    "youtube-search": "^1.1.4",
+    "ytdl-core": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.11.4",
+    "@types/node": "^14.10.3",
+    "eslint": "^7.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "koa-logger": "^3.2.1",
+    "nodemon": "^2.0.0",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.2"
+  }
+}
