@@ -54,10 +54,11 @@ export function Bot() {
         connection = await joinChannel(message)
         const stream = await getYTStream(args[0])
 
-        stream.on('info', ({ title }) => {
+        stream.on('info', ({ videoDetails = {} }) => {
           if (queue.length === 0) {
             activeStream = connection.playStream(stream)
           }
+          const { title } = videoDetails
           queue.push({
             name: title,
             stream,
